@@ -1,0 +1,18 @@
+<package>
+  <description brief="simple_scenario1">
+
+     simple_scenario1
+
+  </description>
+  <author>khenglee</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/simple_scenario1</url>
+  <depend package="cob_bringup"/>
+  <depend package="cob_dashboard"/>
+  <depend package="cob_script_server"/>
+  <depend package="rospy"/>
+
+</package>
+
+

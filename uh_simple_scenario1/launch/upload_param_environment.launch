@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!-- send ENVIRONMENT parameters to parameter server -->
+	<rosparam command="load" ns="base" file="$(find uh_simple_scenario1)/launch/base.yaml"/>
+
+</launch>

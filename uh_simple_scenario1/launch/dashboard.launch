@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!-- upload button parameters, but delete the old ones before -->
+	<rosparam command="delete" param="dashboard/buttons"/>
+	<rosparam command="load" ns="dashboard/buttons" file="$(find uh_simple_scenario1)/launch/dashboard.yaml"/>
+	
+	<!-- upload script server parameters -->
+	<include ns="script_server" file="$(find uh_simple_scenario1)/launch/upload_param_robot.launch"/>
+	<include ns="script_server" file="$(find uh_simple_scenario1)/launch/upload_param_environment.launch"/>
+	
+	<!-- start dashboard -->
+	<node pkg="cob_dashboard" type="knoeppkes.py" name="$(anon dashboard_node)" ns="dashboard" cwd="node" respawn="false" output="screen" />
+	
+</launch>

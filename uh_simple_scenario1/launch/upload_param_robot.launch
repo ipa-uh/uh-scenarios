@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!-- send parameters to parameter server -->
+	<rosparam command="load" ns="base" file="$(find uh_simple_scenario1)/launch/base.yaml"/>
+	<rosparam command="load" ns="tray" file="$(find uh_simple_scenario1)/launch/tray.yaml"/>
+	<rosparam command="load" ns="torso" file="$(find uh_simple_scenario1)/launch/torso.yaml"/>
+	<rosparam command="load" ns="head" file="$(find uh_simple_scenario1)/launch/head.yaml"/>
+	<rosparam command="load" ns="arm" file="$(find uh_simple_scenario1)/launch/arm.yaml"/>
+	<rosparam command="load" ns="sdh" file="$(find uh_simple_scenario1)/launch/sdh.yaml"/>
+	<rosparam command="load" ns="light" file="$(find uh_simple_scenario1)/launch/light.yaml"/>
+	<rosparam command="load" ns="sound" file="$(find uh_simple_scenario1)/launch/sound.yaml"/>
+
+</launch>
